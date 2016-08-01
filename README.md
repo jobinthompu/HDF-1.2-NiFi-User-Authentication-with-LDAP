@@ -15,21 +15,20 @@ Setting up **NiFi User Aunthentication with LDAP** in HWX Sandbox with Knox-demo
 ```
 2) Make sure Knox is installed on your sandbox and demo LDAP is started via Ambari
 
-![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/images/1.Ambari-knox.png)
+![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/Resources/images/1.Ambari-knox.jpg)
 
 ## Steps
 1) I already created Certification Authorities and client certificates at www.tinycert.org
 
-![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/images/1.Ambari-knox.png)
+![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/Resources/images/2.TinyCert.jpg)
 
 How to create certificates as well configurations can be found in below article:
 
 https://community.hortonworks.com/content/kbentry/886/securing-nifi-step-by-step.html
 
-If you are too lazy to create them, try with mine :) [Attached as certificates.zip]
+If you are too lazy to create them, try with mine :) Attached here [certificates.zip](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/Resources/cert/certificates.zip) 
 
 - Use cert-browser.pfx to load into browser to be a NiFi administrator 'DEMO'
-
 - Upload other two certificates to Sandbox under '/root/scripts/' and execute below commands, while executing last command enter 'hadoop' as password and 'yes' when asked if it can be trusted.
 
 ```
