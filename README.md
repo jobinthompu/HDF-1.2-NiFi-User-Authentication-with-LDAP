@@ -76,6 +76,7 @@ vi /opt/nifi-1.1.0.0-10/conf/authorized-users.xml
 6) Above configuration is to login as NiFi Administrator, every other users can be pulled from LDAP after this administrator assigns roles on request.
 
 7) Configure ./conf/login-identity-providers.xml as below with reference to Knox Demo LDAP Server.
+
 ![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/Resources/images/5.login-identity-providers.jpg)
 
 ```
@@ -110,13 +111,13 @@ vi /opt/nifi-1.1.0.0-10/conf/authorized-users.xml
 ```
 9) Now say open ‘Chrome’ browser and load client certificate associated with ADMIN user and login to secure https url of NiFi running on sandbox:
 
-https://sandbox:9090/nifi
+[https://sandbox:9090/nifi](https://sandbox:9090/nifi)
 
 10) When asked, confirm for security exception and proceed. Now you are securely logged in as Demo user with admin privileges. You can now grant access to any user requesting access who are part of LDAP Directory.
 
 11) Open another browser say ‘Safari’ to establish another session
 
-https://sandbox:9090/nifi
+[https://sandbox:9090/nifi](https://sandbox:9090/nifi)
 
 It will popup below screen for login,enter credentials for accounts part of LDAP. Below are credentials part of knox demo ldap we have configured.
 ```
@@ -135,17 +136,19 @@ guest/guest-password
 13) Now go back to chrome browser where ‘Demo’ user is NiFi Administrator and assign role to Tom
 
 ![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/Resources/images/8.flow_users.jpg)
+
 ![alt tag](https://github.com/jobinthompu/NiFi-User-Authentication-with-LDAP-/blob/master/Resources/images/9.User-roles.jpg)
 
 
-14. Go back to the old session as tom in safari, refresh the browser and you will be logged in as tom with privileges assigned by NiFi administrator. You can test if for other users as well.
+14) Go back to the old session as tom in safari, refresh the browser and you will be logged in as tom with privileges assigned by NiFi administrator. You can test if for other users as well.
 
 ## Summary
 Using Knox-Demo-LDAP, Implemented User Athentication with Ldap over NiFi secured with 2way-SSL
 
 ## References:
 
-You can refer my HCC [Article](https://community.hortonworks.com/articles/7341/nifi-user-authentication-with-ldap.html) 
+You can refer my HCC [Article](https://community.hortonworks.com/articles/7341/nifi-user-authentication-with-ldap.html) as well.
 
 Thanks,
+
 Jobin George
