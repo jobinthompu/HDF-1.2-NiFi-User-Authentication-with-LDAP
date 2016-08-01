@@ -2,7 +2,7 @@
 
 ## Short Description
 
-Setting up **NiFi User Aunthentication with LDAP** in HWX Sandbox with Knox-demo-ldap on HDF-1.2 Version
+Setting up "NiFi User Aunthentication with LDAP" in HWX Sandbox with Knox-demo-ldap using HDF-1.2 Version
 
 ## Prerequisite
 
